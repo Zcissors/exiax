@@ -1,4 +1,4 @@
-// Set the target date for the countdown (replace with your desired date)
+// Set the target date for the countdown 
 const targetDate = new Date('December 31, 2023 23:59:59').getTime();
 
 // Update the countdown every second
@@ -16,7 +16,7 @@ function updateCountdown() {
         document.getElementById('count').textContent = `${seconds}`;
     } else {
         // If the countdown has reached zero, display a message
-        document.getElementById('count').textContent = 'Welcome';
+        document.getElementById('count').textContent = 'Better luck next time.';
         clearInterval(countdownInterval); // Stop the countdown interval
     }
 }
